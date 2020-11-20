@@ -142,16 +142,18 @@
                     <br>
                     Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
                 </div>
-                <button><i class="fas fa-play"></i></button>
+                <div class="demo__video-btn">
+                    <button><i class="fas fa-play"></i></button>
+                </div>
             </div>
         </section>
         <section class="why-choose">
-            <div class="container">
-                <div class="title">
+            <!-- <div class="container"> -->
+                <div class="why-choose__title">
                     <h3>Why Choose The Product</h3>
                     <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
                 </div>
-                <div class="why-choose-content">
+                <div class="why-choose__content">
                     <div class="why-choose__carousel" >
                         <div>
                             <img src="./images/sams-watch-1.png" alt="">
@@ -163,9 +165,8 @@
                             <img src="./images/sams-watch-5.png" alt="">
                         </div>
                     </div>
-                    <div class="why-choose__right-column">
+                    <div class="why-choose__text">
                         <div class="inner">
-                            
                             <div class="features">
                                 <span class="circle"><i class="fab fa-cloudversify"></i></span>
                                 <h4>High Quality</h4>
@@ -196,7 +197,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            <!-- </div> -->
         </section>
         <section class="products">
             <div class="container">
@@ -204,10 +205,10 @@
                     <h3>Our Awesome Products</h3>
                     <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
                 </div>
-                <div class="product_blocks">
-                    <div class="productsItems">
-                        <img src="./images/watch-1-lg.png" alt="">
-                        <div class="productsItems_rColumn">
+                <div class="product__card">
+                    <div class="product__card-content">
+                        <img class="product__card-img" src="./images/watch-1-lg.png" alt="">
+                        <div class="product__card-text">
                             <h4>Luxurious Watch</h4>
                             <ul>
                                 <li><i class="fas fa-check"></i>Crown Protector</li>
@@ -215,15 +216,15 @@
                                 <li><i class="fas fa-check"></i>Movement Button</li>
                                 <li><i class="fas fa-check"></i>1 Year Guarantee</li>
                             </ul>
-                            <p id="price">$120 <sup>$250</sup></p>
+                            <p class="product__card-price" >$120 <sup>$250</sup></p>
                             <button>
                                 <a href="">Order Now</a>
                             </button>
                         </div>
                     </div>
-                    <div class="productsItems">
-                        <img src="./images/watch-2-lg.png" alt="">
-                        <div class="productsItems_rColumn">
+                    <div class="product__card-content">
+                        <img class="product__card-img" src="./images/watch-2-lg.png" alt="">
+                        <div class="product__card-text">
                             <h4>Pink Torex Watch</h4>
                             <ul>
                                 <li><i class="fas fa-check"></i>Stainless Steel</li>
@@ -231,15 +232,15 @@
                                 <li><i class="fas fa-check"></i>3 Step Protection</li>
                                 <li><i class="fas fa-check"></i>2 Year Guarantee</li>
                             </ul>
-                            <p id="price">$250 <sup>$390</sup></p>
+                            <p class="product__card-price" >$250 <sup>$390</sup></p>
                             <button>
                                 <a href="">Order Now</a>
                             </button>
                         </div>
                     </div>
-                    <div class="productsItems">
-                        <img src="./images/watch-3-lg.png" alt="">
-                        <div class="productsItems_rColumn">
+                    <div class="product__card-content">
+                        <img class="product__card-img" src="./images/watch-3-lg.png" alt="">
+                        <div class="product__card-text">
                             <h4>New Yellow Watch</h4>
                             <ul>
                                 <li><i class="fas fa-check"></i>2 Step Protection Glass</li>
@@ -247,15 +248,15 @@
                                 <li><i class="fas fa-check"></i>Clear Super Glass</li>
                                 <li><i class="fas fa-check"></i>3 Year Guarantee</li>
                             </ul>
-                            <p id="price">$330 <sup>$550</sup></p>
+                            <p class="product__card-price">$330 <sup>$550</sup></p>
                             <button>
                                 <a href="">Order Now</a>
                             </button>
                         </div>
                     </div>
-                    <div class="productsItems">
-                        <img src="./images/watch-4-lg.png" alt="">
-                        <div class="productsItems_rColumn">
+                    <div class="product__card-content">
+                        <img class="product__card-img" src="./images/watch-4-lg.png" alt="">
+                        <div class="product__card-text">
                             <h4>Brand New Black</h4>
                             <ul>
                                 <li><i class="fas fa-check"></i>Lifetime Battery</li>
@@ -263,14 +264,14 @@
                                 <li><i class="fas fa-check"></i>Water Resistance</li>
                                 <li><i class="fas fa-check"></i>1 Year Guarantee</li>
                             </ul>
-                            <p id="price">$180 <sup>$390</sup></p>
+                            <p class="product__card-price">$180 <sup>$390</sup></p>
                             <button>
                                 <a href="">Order Now</a>
                             </button>
                         </div>
                     </div>
                 </div>
-                <div class="button">
+                <div class="product__card-button">
                     <a href="#">More products</a>
                 </div>
             </div>
@@ -479,151 +480,18 @@
                     <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
                 </ul>
             </div>
-            <p>© Copy 2019. All Rights Reserved By<a href="https://themeforest.net/user/thememeta"> Thememeta</a></p>
+            <p>© Copyright 2019. All Rights Reserved By<a href="https://themeforest.net/user/thememeta"> Thememeta</a></p>
         </div>
     </footer>
 
-    <!-- TINY SLieder -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-    <script>
-         const slider = tns({
-            "container": ".my-slider",
-            "items": 4,
-            // "controls": true,
-            "slideBy": "page",
-            "mouseDrag": true,
-            "swipeAngle": false,
-            "speed": 400
-         });
-    </script> -->
-    <!-- /TINY SLieder -->
     
-    </script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0=" crossorigin="anonymous"></script>
     
-    <!-- FIRST SLICK SLIDER -->
-    <script>
-        $('.why-choose__carousel').slick({
-        dots: true,
-        infinite: true,
-        arrows: false,
-        autoplay: true,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear'
-        });
-    </script>
-    <!-- /FIRST SLICK SLIDER  -->
-
-    <!-- SECOND SLICK SLIDER -->
-    <script>
-        $('.my-slider').slick({
-        dots: false,
-        arrows: true,
-        autoplay: true,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        // prevArrow:"<i class'fa fa-chevron-left'></i>",
-        nextArrow:"<button class='slick_next'><i class='fa fa-chevron-right' aria-hidden='true'></i></button>", 
-        prevArrow:"<button class='slick_prev'><i class='fa fa-chevron-left' aria-hidden='true'></i></button>", 
-        responsive: [
-            {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                infinite: true,
-                arrows: true,
-                }
-            },
-            {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                infinite: true,
-                arrows: true,
-                }
-            },
-            {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                }
-            }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-        ]
-        });
-    </script>
-    <!-- /SECOND SLICK SLIDER -->
-
-    <!-- <script>
-        window.onscroll = function() {myFunction()};
-
-        // Get the navbar
-        var navbar = document.getElementById("nav-bar");
-
-        // Get the offset position of the navbar
-        var sticky = navbar.offsetTop;
-
-        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-            } else {
-                navbar.classList.remove("sticky");
-            }
-        }
-    </script> -->
-
-    <!-- FAQ ACORDEON -->
-    <script>
-        var acc = document.getElementsByClassName("faq_question");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-            this.classList.toggle("open");
-            var faq_answer = this.nextElementSibling;
-            if (faq_answer.style.maxHeight){
-                faq_answer.style.maxHeight = null;
-            } else {
-                faq_answer.style.maxHeight = faq_answer.scrollHeight + "px";
-            } 
-        });
-        }
-    </script>
-    <!--/FAQ ACORDEON -->
-    <!-- HAMBURGER MENU  -->
-    <!-- <script>
-        const menu = document.querySelector('.menu');
-        const btn = menu.querySelector('.nav-tgl');
-        btn.addEventListener('click', evt => {
-            if (menu.className.indexOf('active') === -1) {
-            menu.classList.add('active');
-        } else {
-            menu.classList.remove('active');
-        }
-        })
-    </script>	 -->
-        <!-- /HAMBURGER MENU   -->
-    <script>
-        function myFunction() {
-            var x = document.getElementById("nav__links");
-            if (x.style.display === "block") {
-            x.style.display = "none";
-            } else {
-            x.style.display = "block";
-            }
-        }
-        </script>
+    
+    <script src="script.js"></script>
+    
 </body>
 </html>
